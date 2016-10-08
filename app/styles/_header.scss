@@ -1,0 +1,30 @@
+header{
+    background-color: $primary;
+    padding-left: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    height: 90px;
+    &:after{
+        display: table;
+        content: " ";
+    }
+    .main-title{
+        font-weight: bold;
+        text-transform: uppercase;
+        height: 10px;
+    }
+    .header-content:after{
+        display: block;
+        content: " ";
+    }
+    .tagline{
+        text-transform: uppercase;
+        color: #fff;  
+    }
+    .title-section{
+        float: left;
+        color: #fff;
+    }
+}

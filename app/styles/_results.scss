@@ -1,0 +1,50 @@
+.results-container{
+    &:after{
+        display: block;
+        content: " "        
+    }
+    .result-item{
+        border-radius: 5px;
+        border: 1px solid #888;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        margin-top: 10px;
+        &:hover{
+            background-color: #DBDBDB;
+        }
+        &:after{
+            display: block;
+            content: " "        
+        }
+        .flight-info{
+            float: left;
+            width: 70%;
+            .one-way{
+                margin-right: 5%;
+            }
+            .one-way,.return{
+                display: inline-block;
+                font-size: 13px;
+                div{
+                    line-height: 20px;
+                }
+                .origin-dest-label-section{
+                    font-size: 14px;
+                    font-weight: bold;
+                }
+            }
+        }
+        .flight-action{
+            float: right;
+            padding: 10px 20px 10px 0;
+            button{
+                background-color: #E62600;
+                border: none;
+                padding: 10px;
+                color: #fff;
+                text-transform: uppercase;
+            }
+        }
+    }
+}

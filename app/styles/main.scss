@@ -1,0 +1,67 @@
+@import "_variables";
+@import "_header";
+@import "_results";
+@import "_sidebar";
+@import "main_mobile";
+
+
+html,body{
+	margin: 0;
+	padding: 0
+}
+body{
+	font-family: $font-family;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.button{
+	background-color: $button-bg-color;
+    border: none;
+    padding: 10px;
+    color: $button-fg-color;
+    text-transform: uppercase;
+    cursor: pointer;		
+}
+
+main{
+	padding-left: 10px;
+}
+
+main:after, main:before{
+	display: table;
+    content: " ";
+}
+
+@media (min-width: 768px){
+	.sidebar{
+		width: 25%;
+		float: left;
+		padding-right: 15px;
+		position: fixed;
+	    top: 90px;
+	    bottom: 0;
+	    left: 0;
+	    z-index: 1000;
+	    display: block;
+	    overflow-x: hidden;
+	    overflow-y: auto;
+	    background-color: #5E1000;
+	    border-right: 1px solid #eee;
+	}
+
+	.content-area{
+		margin-top: 90px;
+		width: 75%;
+		float: left;
+		min-height: 1px;
+		position: relative;
+    	padding-left: 15px;	
+    	margin-left: 25%;
+    	padding-right: 1%;
+	}	
+}

@@ -1,0 +1,42 @@
+aside.sidebar{
+	padding-left: 20px;
+    padding-top: 20px;
+    .filter-type-tabcontainer{
+    	button.tab-item{
+			&.active{
+				background-color: #2d0e03; 
+				border: none;
+				padding: 6px;
+				border-radius: 0;
+			}
+			background-color: $secondary;
+			color: #fff;
+			padding: 5px;
+			border: 1px solid $secondary-border-color;
+			cursor: pointer;
+			width: 48%;
+			border-radius: 2px;
+    	}
+    }
+    .filter-form{
+		.form-input{
+			padding-top: 10px;
+			padding-bottom: 10px;
+
+			input[type=text], input[type=date], select{
+				width: 95%;
+				height: 30px;
+				border-radius: 5px;
+				box-shadow: none;
+			}
+
+		}
+		input[type=submit]{
+			
+		}
+
+
+	}
+}
+
+
