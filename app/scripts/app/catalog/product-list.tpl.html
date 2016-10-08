@@ -1,0 +1,7 @@
+<md-card ng-repeat="product in $ctrl.products track by $index" flex="22" flex-sm="46" flex-xs="80">
+    <img ng-src="{{product.imageURL}}"></img>
+    <md-card-footer-text layout="column">
+        <span class="md-title">{{product.title}} </span>
+        <span class="md-subhead">{{product.price}}</span>
+     </md-card-footer-text>
+</md-card>  

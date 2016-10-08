@@ -28,47 +28,43 @@
     <!-- Color the status bar on mobile devices -->
     <meta name="theme-color" content="#2F3BA2">
 
-    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
-    <!--
-    <link rel="canonical" href="http://www.example.com/">
-    -->
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.1/angular-material.min.css">
 
     <!-- Your styles -->
     <link rel="stylesheet" href="styles/main.css">
   </head>
-  <body ng-app="myflight">
+  <body ng-cloak ng-app="ecomm">
     <header>
         <div class="header-content">
             <img src="" class="logo-img">
             <div class="title-section">
-                <h2 class="main-title">Flight</h2>
+                <h2 class="main-title">Ecomm</h2>
                 <h5 class="tagline">Search Engine</h5>
             </div>
         </div>
         <div style="clear:both"></div>
     </header>
-    <main ng-controller="SearchController as main">
-        <aside class="sidebar">
-            <filter-form 
-                    on-search="main.onSearch(filterObj)"
-                    price-filter="main.priceFilter"
-                    on-price-filter="main.onPriceFilter(filterVal)"
-                    ></filter-form>
-        </aside>
-        <section class="content-area">
-            <h3 ng-show="main.searchTriggered">Loading...</h3>
-            <search-results resuts="main.searchResult"></search-results>
-        </section>
+    <main ng-controller="CatalogController as main" layout="column"> 
+        <header layout>
+            The search filter will come here
+        </header>
+        <product-list layout layout-wrap layout-align="center"></product-list>
+        
     </main>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-animate.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-aria.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-messages.min.js"></script>
+    <!-- Angular Material Library -->
+    <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
     <!-- build:js scripts/main.min.js -->
-    <script src="scripts/app/search/search.module.js"></script>
+    <script src="scripts/app/catalog/catalog.module.js"></script>
     <script src="scripts/main.js"></script>
     <script src="scripts/app/constants.js"></script>
-    <script src="scripts/app/search/search.service.js"></script>
-    <script src="scripts/app/search/filterform.component.js"></script>
-    <script src="scripts/app/search/searchresults.component.js"></script>
-    <script src="scripts/app/search/search.controller.js"></script>
+    <script src="scripts/app/catalog/catalog.service.js"></script>
+    <script src="scripts/app/catalog/filterform.component.js"></script>
+    <script src="scripts/app/catalog/product-list.component.js"></script>
+    <script src="scripts/app/catalog/catalog.controller.js"></script>
     <!-- endbuild -->
 
   </body>

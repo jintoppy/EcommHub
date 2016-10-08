@@ -2,5 +2,10 @@
 /* global angular */
 (function() {
   'use strict';
-  angular.module('myflight', ['myflight.search']);
+  angular.module('ecomm', [
+  	'ecomm.catalog',
+  	'ngMaterial',
+  	'ngAria',
+  	'ngAnimate', 
+  	'ngMessages']);
 })();

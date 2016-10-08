@@ -2,5 +2,5 @@
 (function() {
   'use strict';
 
-  angular.module('myflight.search', []);
+  angular.module('ecomm.catalog', []);
 })();

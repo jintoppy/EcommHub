@@ -1,0 +1,7 @@
+'use strict'; /* eslint-env browser */
+(function () {
+  'use strict';
+
+  angular.module('ecomm.catalog', []);
+})();
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNhdGFsb2cubW9kdWxlLmpzIl0sIm5hbWVzIjpbImFuZ3VsYXIiLCJtb2R1bGUiXSwibWFwcGluZ3MiOiJjQUFBO0FBQ0EsQ0FBQyxZQUFXO0FBQ1Y7O0FBRUFBLFVBQVFDLE1BQVIsQ0FBZSxlQUFmLEVBQWdDLEVBQWhDO0FBQ0QsQ0FKRCIsImZpbGUiOiJjYXRhbG9nLm1vZHVsZS5qcyIsInNvdXJjZXNDb250ZW50IjpbIi8qIGVzbGludC1lbnYgYnJvd3NlciAqL1xuKGZ1bmN0aW9uKCkge1xuICAndXNlIHN0cmljdCc7XG5cbiAgYW5ndWxhci5tb2R1bGUoJ2Vjb21tLmNhdGFsb2cnLCBbXSk7XG59KSgpO1xuIl0sInNvdXJjZVJvb3QiOiIvc291cmNlLyJ9
