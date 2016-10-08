@@ -107,13 +107,13 @@ gulp.task('scripts', () =>
       // Note: Since we are not using useref in the scripts build pipeline,
       //       you need to explicitly list your scripts here in the right order
       //       to be correctly concatenated
-      'scripts/app/search/search.module.js',
+      './app/scripts/app/search/search.module.js',
       './app/scripts/main.js',
-      'scripts/app/constants.js',
-      'scripts/app/search/search.service.js',
-      'scripts/app/search/filterform.component.js',
-      'scripts/app/search/searchresults.component.js',
-      'scripts/app/search/search.controller.js'
+      './app/scripts/app/constants.js',
+      './app/scripts/app/search/search.service.js',
+      './app/scripts/app/search/filterform.component.js',
+      './app/scripts/app/search/searchresults.component.js',
+      './app/scripts/app/search/search.controller.js'
     ])
       .pipe($.newer('.tmp/scripts'))
       .pipe($.sourcemaps.init())

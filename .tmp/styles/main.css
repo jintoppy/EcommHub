@@ -1,0 +1,142 @@
+header {
+  background-color: #1C1B1A;
+  padding-left: 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  height: 90px; }
+  header:after {
+    display: table;
+    content: " "; }
+  header .main-title {
+    font-weight: bold;
+    text-transform: uppercase;
+    height: 10px; }
+  header .header-content:after {
+    display: block;
+    content: " "; }
+  header .tagline {
+    text-transform: uppercase;
+    color: #fff; }
+  header .title-section {
+    float: left;
+    color: #fff; }
+
+.results-container:after {
+  display: block;
+  content: " "; }
+
+.results-container .result-item {
+  border-radius: 5px;
+  border: 1px solid #888;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  margin-top: 10px; }
+  .results-container .result-item:hover {
+    background-color: #DBDBDB; }
+  .results-container .result-item:after {
+    display: block;
+    content: " "; }
+  .results-container .result-item .flight-info {
+    float: left;
+    width: 70%; }
+    .results-container .result-item .flight-info .one-way {
+      margin-right: 5%; }
+    .results-container .result-item .flight-info .one-way, .results-container .result-item .flight-info .return {
+      display: inline-block;
+      font-size: 13px; }
+      .results-container .result-item .flight-info .one-way div, .results-container .result-item .flight-info .return div {
+        line-height: 20px; }
+      .results-container .result-item .flight-info .one-way .origin-dest-label-section, .results-container .result-item .flight-info .return .origin-dest-label-section {
+        font-size: 14px;
+        font-weight: bold; }
+  .results-container .result-item .flight-action {
+    float: right;
+    padding: 10px 20px 10px 0; }
+    .results-container .result-item .flight-action button {
+      background-color: #E62600;
+      border: none;
+      padding: 10px;
+      color: #fff;
+      text-transform: uppercase; }
+
+aside.sidebar {
+  padding-left: 20px;
+  padding-top: 20px; }
+  aside.sidebar .filter-type-tabcontainer button.tab-item {
+    background-color: #5E1000;
+    color: #fff;
+    padding: 5px;
+    border: 1px solid #772d1e;
+    cursor: pointer;
+    width: 48%;
+    border-radius: 2px; }
+    aside.sidebar .filter-type-tabcontainer button.tab-item.active {
+      background-color: #2d0e03;
+      border: none;
+      padding: 6px;
+      border-radius: 0; }
+  aside.sidebar .filter-form .form-input {
+    padding-top: 10px;
+    padding-bottom: 10px; }
+    aside.sidebar .filter-form .form-input input[type=text], aside.sidebar .filter-form .form-input input[type=date], aside.sidebar .filter-form .form-input select {
+      width: 95%;
+      height: 30px;
+      border-radius: 5px;
+      box-shadow: none; }
+
+@media (max-width: 768px) {
+  main {
+    margin-top: 90px; } }
+
+html, body {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: "Arial"; }
+
+* {
+  box-sizing: border-box; }
+
+.button {
+  background-color: #E62600;
+  border: none;
+  padding: 10px;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer; }
+
+main {
+  padding-left: 10px; }
+
+main:after, main:before {
+  display: table;
+  content: " "; }
+
+@media (min-width: 768px) {
+  .sidebar {
+    width: 25%;
+    float: left;
+    padding-right: 15px;
+    position: fixed;
+    top: 90px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #5E1000;
+    border-right: 1px solid #eee; }
+  .content-area {
+    margin-top: 90px;
+    width: 75%;
+    float: left;
+    min-height: 1px;
+    position: relative;
+    padding-left: 15px;
+    margin-left: 25%;
+    padding-right: 1%; } }

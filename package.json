@@ -44,5 +44,8 @@
     "globals": {
       "angular": true
     }
+  },
+  "dependencies": {
+    "express": "^4.14.0"
   }
 }

@@ -1,0 +1,7 @@
+'use strict'; /* eslint-env browser */
+(function () {
+  'use strict';
+
+  angular.module('myflight.search', []);
+})();
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNlYXJjaC5tb2R1bGUuanMiXSwibmFtZXMiOlsiYW5ndWxhciIsIm1vZHVsZSJdLCJtYXBwaW5ncyI6ImNBQUE7QUFDQSxDQUFDLFlBQVc7QUFDVjs7QUFFQUEsVUFBUUMsTUFBUixDQUFlLGlCQUFmLEVBQWtDLEVBQWxDO0FBQ0QsQ0FKRCIsImZpbGUiOiJzZWFyY2gubW9kdWxlLmpzIiwic291cmNlc0NvbnRlbnQiOlsiLyogZXNsaW50LWVudiBicm93c2VyICovXG4oZnVuY3Rpb24oKSB7XG4gICd1c2Ugc3RyaWN0JztcblxuICBhbmd1bGFyLm1vZHVsZSgnbXlmbGlnaHQuc2VhcmNoJywgW10pO1xufSkoKTtcbiJdLCJzb3VyY2VSb290IjoiL3NvdXJjZS8ifQ==

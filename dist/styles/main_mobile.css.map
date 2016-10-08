@@ -1,0 +1,1 @@
+{"version":3,"sources":["main_mobile.scss"],"names":[],"mappings":"AAKA,yBACC,KACC,eAAiB,CACjB,CAAA","file":"main_mobile.css","sourcesContent":["@import \"_header_mobile\";\n@import \"_results_mobile\";\n@import \"_sidebar_mobile\";\n\n\n@media (max-width: 768px){\n\tmain{\n\t\tmargin-top: 90px;\n\t}\n}"],"sourceRoot":"/source/"}
